@@ -119,22 +119,22 @@ struct StarLayer {
   static func createStarPath(_ starPoints: [CGPoint], size: Double,
                              lineWidth: Double) -> UIBezierPath {
     
-    let lineWidthLocal = lineWidth + ceil(lineWidth * 0.3)
-    let sizeWithoutLineWidth = size - lineWidthLocal * 2
+
     
-    let points = scaleStar(starPoints, factor: sizeWithoutLineWidth / 100,
-                           lineWidth: lineWidthLocal)
     
-    let path = UIBezierPath()
-    path.move(to: points[0])
-    let remainingPoints = Array(points[1..<points.count])
-    
-    for point in remainingPoints {
-      path.addLine(to: point)
-    }
-    
-    path.close()
-    return path
+    let bezierPath = UIBezierPath()
+    bezierPath.move(to: CGPoint(x: 71.93, y: 11))
+    bezierPath.addCurve(to: CGPoint(x: 50, y: 22.26), controlPoint1: CGPoint(x: 62.75, y: 11), controlPoint2: CGPoint(x: 54.15, y: 18.19))
+    bezierPath.addCurve(to: CGPoint(x: 28.07, y: 11), controlPoint1: CGPoint(x: 45.85, y: 18.19), controlPoint2: CGPoint(x: 37.25, y: 11))
+    bezierPath.addCurve(to: CGPoint(x: 3, y: 35.39), controlPoint1: CGPoint(x: 12.38, y: 11), controlPoint2: CGPoint(x: 3, y: 20.12))
+    bezierPath.addCurve(to: CGPoint(x: 14.96, y: 58.73), controlPoint1: CGPoint(x: 3, y: 47.91), controlPoint2: CGPoint(x: 14.54, y: 58.37))
+    bezierPath.addLine(to: CGPoint(x: 47.27, y: 89.9))
+    bezierPath.addCurve(to: CGPoint(x: 52.73, y: 89.9), controlPoint1: CGPoint(x: 48.79, y: 91.37), controlPoint2: CGPoint(x: 51.21, y: 91.37))
+    bezierPath.addLine(to: CGPoint(x: 84.99, y: 58.84))
+    bezierPath.addCurve(to: CGPoint(x: 97, y: 35.39), controlPoint1: CGPoint(x: 85.46, y: 58.37), controlPoint2: CGPoint(x: 97, y: 47.89))
+    bezierPath.addCurve(to: CGPoint(x: 71.93, y: 11), controlPoint1: CGPoint(x: 97, y: 20.12), controlPoint2: CGPoint(x: 87.62, y: 11))
+    bezierPath.close()
+    return bezierPath
   }
   
   /**
