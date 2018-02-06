@@ -123,16 +123,16 @@ struct StarLayer {
     
     
     let bezierPath = UIBezierPath()
-    bezierPath.move(to: CGPoint(x: 71.93, y: 11))
-    bezierPath.addCurve(to: CGPoint(x: 50, y: 22.26), controlPoint1: CGPoint(x: 62.75, y: 11), controlPoint2: CGPoint(x: 54.15, y: 18.19))
-    bezierPath.addCurve(to: CGPoint(x: 28.07, y: 11), controlPoint1: CGPoint(x: 45.85, y: 18.19), controlPoint2: CGPoint(x: 37.25, y: 11))
-    bezierPath.addCurve(to: CGPoint(x: 3, y: 35.39), controlPoint1: CGPoint(x: 12.38, y: 11), controlPoint2: CGPoint(x: 3, y: 20.12))
-    bezierPath.addCurve(to: CGPoint(x: 14.96, y: 58.73), controlPoint1: CGPoint(x: 3, y: 47.91), controlPoint2: CGPoint(x: 14.54, y: 58.37))
-    bezierPath.addLine(to: CGPoint(x: 47.27, y: 89.9))
-    bezierPath.addCurve(to: CGPoint(x: 52.73, y: 89.9), controlPoint1: CGPoint(x: 48.79, y: 91.37), controlPoint2: CGPoint(x: 51.21, y: 91.37))
-    bezierPath.addLine(to: CGPoint(x: 84.99, y: 58.84))
-    bezierPath.addCurve(to: CGPoint(x: 97, y: 35.39), controlPoint1: CGPoint(x: 85.46, y: 58.37), controlPoint2: CGPoint(x: 97, y: 47.89))
-    bezierPath.addCurve(to: CGPoint(x: 71.93, y: 11), controlPoint1: CGPoint(x: 97, y: 20.12), controlPoint2: CGPoint(x: 87.62, y: 11))
+    bezierPath.move(to: CGPoint(x: 44.43, y: 11))
+    bezierPath.addCurve(to: CGPoint(x: 31.25, y: 17.75), controlPoint1: CGPoint(x: 38.91, y: 11), controlPoint2: CGPoint(x: 33.74, y: 15.31))
+    bezierPath.addCurve(to: CGPoint(x: 18.07, y: 11), controlPoint1: CGPoint(x: 28.76, y: 15.31), controlPoint2: CGPoint(x: 23.59, y: 11))
+    bezierPath.addCurve(to: CGPoint(x: 3, y: 25.64), controlPoint1: CGPoint(x: 8.64, y: 11), controlPoint2: CGPoint(x: 3, y: 16.47))
+    bezierPath.addCurve(to: CGPoint(x: 10.19, y: 39.64), controlPoint1: CGPoint(x: 3, y: 33.14), controlPoint2: CGPoint(x: 9.94, y: 39.42))
+    bezierPath.addLine(to: CGPoint(x: 29.61, y: 58.34))
+    bezierPath.addCurve(to: CGPoint(x: 32.89, y: 58.34), controlPoint1: CGPoint(x: 30.52, y: 59.22), controlPoint2: CGPoint(x: 31.98, y: 59.22))
+    bezierPath.addLine(to: CGPoint(x: 52.28, y: 39.7))
+    bezierPath.addCurve(to: CGPoint(x: 59.5, y: 25.64), controlPoint1: CGPoint(x: 52.56, y: 39.42), controlPoint2: CGPoint(x: 59.5, y: 33.13))
+    bezierPath.addCurve(to: CGPoint(x: 44.43, y: 11), controlPoint1: CGPoint(x: 59.5, y: 16.47), controlPoint2: CGPoint(x: 53.86, y: 11))
     bezierPath.close()
     return bezierPath
   }
